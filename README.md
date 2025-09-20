@@ -16,6 +16,16 @@ sudo systemd-hwdb update
 sudo udevadm trigger -s input
 ```
 
+## Features
+
+- Control RGB lighting
+
+## Road Map
+
+- [ ] Switch RGB lighting mode
+- [ ] Custom key mapping
+- [ ] Custom RGB light for single keys
+
 ## Usage
 
 - Install uv
