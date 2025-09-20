@@ -25,6 +25,7 @@ sudo udevadm trigger -s input
 - [ ] Switch RGB lighting mode
 - [ ] Custom key mapping
 - [ ] Custom RGB light for single keys
+- [ ] Rewrite with Rust
 
 ## Usage
 
