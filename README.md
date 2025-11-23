@@ -11,6 +11,7 @@ sudo mkdir -p /etc/udev/hwdb.d
 sudo tee /etc/udev/hwdb.d/90-custom-applehid.hwdb >/dev/null <<'EOF'
 evdev:input:*
  KEYBOARD_KEY_7009c=unknown
+ KEYBOARD_KEY_700e8=unknown
 EOF
 sudo systemd-hwdb update
 sudo udevadm trigger -s input
