@@ -17,6 +17,22 @@ sudo systemd-hwdb update
 sudo udevadm trigger -s input
 ```
 
+### NixOS
+
+```nix
+{
+  boot.extraModprobeConfig = ''
+    options hid_apple fnmode=2
+  '';
+
+  services.udev.extraHwdb = ''
+    evdev:input:*
+     KEYBOARD_KEY_7009c=unknown
+     KEYBOARD_KEY_700e8=unknown
+  '';
+}
+```
+
 ## Features
 
 - Control RGB lighting
